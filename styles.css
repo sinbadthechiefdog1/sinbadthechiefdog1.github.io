@@ -1,0 +1,820 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('Mahoda\ Display\ Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'MyCustomFont', sans-seri;
+    src: url('Mahoda\ Display\ Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+body {
+    font-family: 'MyCustomFont', sans-seri;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: rgb(0, 1, 19);
+    background: radial-gradient(circle, rgba(0, 1, 19, 1) 0%, rgba(32, 117, 176, 1) 100%);
+    background-image: url("war.gif");
+    overflow-x: hidden;
+    /* Hides overflow */
+}
+
+
+#canvas {
+    margin: 0 auto;
+    display: block;
+    filter: url('#shadowed-goo');
+    position: absolute;
+    z-index: -10;
+    height: 285%;
+}
+
+
+
+.navbar {
+    font-family: 'MyCustomFont', sans-seri;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0, 51, 51);
+    background: -moz-radial-gradient(circle, rgba(0, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(0, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: radial-gradient(circle, rgba(0, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003333", endColorstr="#000000", GradientType=1);
+    padding: 10px 20px;
+    color: white;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 15px;
+    border-width: 4px;
+    font-size: 20px;
+}
+
+.logo {
+
+    font-size: 55px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    /* Space between links */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #12f325;
+    /* Color on hover */
+}
+
+
+.main_container {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #005e2d00;
+    width: 50%;
+}
+
+/* information */
+
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(-300px);
+    }
+
+    100% {
+        transform: translateX(0px);
+        /* Adjust distance as needed */
+    }
+}
+
+.information {
+    border-style: solid;
+    padding: 10px;
+    border-radius: 15px;
+    border-width: 5px;
+    border-color: antiquewhite;
+    background: rgb(0, 51, 51);
+    background: -moz-radial-gradient(circle, rgba(0, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(0, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: radial-gradient(circle, rgba(0, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003333", endColorstr="#000000", GradientType=1);
+    margin-right: auto;
+    margin-left: auto;
+    width: autos;
+    font-family: 'MyCustomFont', sans-seri;
+    display: flex;
+    margin-top: 3%;
+}
+
+.information .navyflag {
+    width: 25%;
+    border-radius: 3px;
+    animation: moveRight 1.8s ease forwards;
+    /* Animation name, duration, and repeat */
+
+}
+
+.information p {
+    font-family: 'MyCustomFont', sans-seri;
+    color: white;
+    margin-left: 5%;
+    font-size: 20px;
+
+}
+
+/* logo main */
+
+
+.logo_main {
+    display: block;
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    background-color: #ffffff;
+    width: 478px;
+    height: 478px;
+    border-radius: 500px;
+}
+
+.logo_main img {
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 600px;
+    border-style: solid;
+    background: rgb(0, 51, 51);
+    background: -moz-radial-gradient(circle, rgba(0, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(0, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: radial-gradient(circle, rgba(0, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003333", endColorstr="#000000", GradientType=1);
+    border-width: 10px;
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    /* Position from the top */
+    left: 50%;
+    /* Position from the left */
+    transform: translate(-50%, -50%);
+    /* Center the image */
+    height: auto;
+    /* Maintain aspect ratio */
+    background-color: rgb(0, 51, 51);
+}
+
+
+/* main topic */
+
+.main_topic h1 {
+    font-family: 'MyCustomFont', sans-seri;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    font-size: 65px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    border-width: 5px;
+}
+
+/* flag */
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.flag {
+
+    margin-top: -0.18%;
+}
+
+.left_flag {
+    z-index: -1;
+    margin-left: -0.5%;
+    position: absolute;
+    left: 0;
+    animation: slideDown 1.8s ease forwards;
+    opacity: 0;
+    /* Start hidden for animation */
+}
+
+
+.right_flag {
+    z-index: -1;
+    ;
+    position: absolute;
+    right: 0;
+    animation: slideDown 1.8s ease forwards;
+    opacity: 0;
+    /* Start hidden for animation */
+}
+
+.flag img {
+    width: 350px;
+}
+
+.socials {
+    background-color: transparent;
+    border-radius: 20px;
+    border-style: none;
+    border-right: none;
+    border-top: none;
+    border-top-right-radius: 0;
+    border-color: #000000;
+    border-width: 5px;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+    filter: blur(0px);
+    margin-top: 0%;
+    top: 0;
+    right: 0;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+.tokenomics-container {
+    position: relative;
+    width: auto;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    border-color: wheat;
+    border-width: 5px;
+    background: rgb(0, 51, 51);
+    background: -moz-radial-gradient(circle, rgba(0, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(0, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: radial-gradient(circle, rgba(0, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003333", endColorstr="#000000", GradientType=1);
+    margin-top: 3%;
+}
+
+
+.tokenomics-container img {
+    top: 8%;
+    position: absolute;
+    width: 150px;
+    transform: rotate(-60deg);
+}
+
+.tokenomics-container .img2 {
+    top: 8%;
+    right: 0;
+    position: absolute;
+    width: 150px;
+    transform: rotate(60deg);
+}
+
+
+.tokenomics-container .st1 {
+    top: 4%;
+    left: 16%;
+    position: absolute;
+    width: 300px;
+    transform: rotate(15deg);
+    z-index: 0;
+    filter: opacity(0.5);
+}
+
+.tokenomics-container .st2 {
+    top: 4%;
+    right: 16%;
+    position: absolute;
+    width: 300px;
+    transform: rotate(-12deg);
+    z-index: 0;
+    filter: opacity(0.5);
+}
+
+.how-to {
+    background-color: rgb(0, 51, 51);
+}
+
+.roadmap {
+    background-color: rgb(0, 51, 51);
+}
+
+.tokenomics-container .roadmapimg {
+    top: 10%;
+    width: 1200px;
+}
+
+.tokenomics-title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+    margin-top: 0%;
+}
+
+.tokenomics-item {
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.tokenomics-container .wikiimage {
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(20deg);
+    position: relative;
+    width: 25%;
+    border-style: solid;
+
+    border-color: #12f325;
+    border-width: 10px;
+}
+
+.tokenomics-container .wikiimage2 {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(0deg);
+    position: relative;
+    width: 54.2%;
+    border-style: solid;
+
+    border-color: #f39212;
+    border-width: 10px;
+}
+
+.tokenomics-container .flag {
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(0deg);
+    position: absolute;
+    width: 54.2%;
+    border-style: solid;
+    width: 150px;
+    border-color: #000000;
+    border-width: 3px;
+    margin-left: 22%;
+    margin-top: 8%;
+    transform: rotate(-30deg);
+}
+
+.tokenomics-container .ww2images {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-left: 18%;
+}
+
+.tokenomics-subtitle {
+    color: #007BFF;
+    text-align: center;
+}
+
+.tokenomics-card {
+    background: #f1f1f1;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin: 15px;
+    width: 300px;
+    border-style: solid;
+    border-color: #006e4d;
+    border-width: 7px;
+    z-index: 1;
+}
+
+.how-to-card {
+    width: 600px;
+}
+
+.roadmap-card {
+    width: 1200px;
+}
+
+.tokenomics-card:hover {
+    background-color: #22e097;
+}
+
+.tokenomics-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tokenomics-item .howto {
+    height: 200px;
+}
+
+.tokenomics-list li {
+    padding: 8px 0;
+    font-size: 25px;
+    color: #555;
+    text-align: center;
+}
+
+.tokenomics-list strong {
+    color: #333;
+}
+
+footer {
+    background-color: #000000;
+}
+
+.disclaimer {
+    background-color: #000000;
+    text-align: center;
+    margin: 0px 0;
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    .socials {
+        background-color: transparent;
+        border-radius: 20px;
+        border-style: none;
+        border-right: none;
+        border-top: none;
+        border-top-right-radius: 0;
+        border-color: #000000;
+        border-width: 5px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        padding-left: 2%;
+        padding-right: 2%;
+        filter: blur(0px);
+        margin-top: 0%;
+        top: 0;
+        right: 0;
+    }
+    .tokenomics-container .flag {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: rotate(0deg);
+        position: absolute;
+        border-style: solid;
+        width: 100px;
+        border-color: #000000;
+        border-width: 3px;
+        margin-left: 5%;
+        margin-top: 260px;
+        transform: rotate(-30deg);
+    }
+    .tokenomics-container {
+        position: relative;
+        width: auto;
+        margin: auto;
+        padding: 20px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-style: solid;
+        border-color: wheat;
+        border-width: 5px;
+        background: rgb(0, 51, 51);
+        background: -moz-radial-gradient(circle, rgba(0, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        background: -webkit-radial-gradient(circle, rgba(0, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        background: radial-gradient(circle, rgba(0, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003333", endColorstr="#000000", GradientType=1);
+        margin-top: 3%;
+    }
+
+    .tokenomics-container .wikiimage2  {
+        display: block;
+        margin-left: -20%;
+        margin-right: auto;
+        transform: rotate(0deg);
+        width: 350px;
+        border-style: solid;
+    
+        border-color: #f39212;
+        border-width: 5px;
+    }
+
+    .tokenomics-container .wikiimage  {
+        margin-top: 5%;
+        display: block;
+        margin-left: -20%;
+        margin-right: auto;
+        transform: rotate(0deg);
+        width: 350px;
+        border-style: solid;
+    
+        border-color: #f39212;
+        border-width: 5px;
+    }
+
+
+    .tokenomics-item .howto {
+        height: auto;
+    }
+
+    .flag img {
+        display: none;
+    }
+
+    .navbar {
+        font-family: 'MyCustomFont', sans-seri;
+        z-index: 10;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(0, 51, 51);
+        padding: 10px 20px;
+        color: white;
+        border-style: solid;
+        border-color: #ffffff;
+        border-radius: 15px;
+        border-width: 4px;
+        font-size: 20px;
+    }
+
+    .logo {
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        /* Space between links */
+        margin-left: 0%;
+        padding: 0%;
+        font-size: 13px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s;
+        margin-left: 0%;
+    }
+
+    .main_container {
+        margin-left: 0%;
+        margin-right: auto;
+        background-color: #005e2d00;
+        width: 50%;
+    }
+
+    .tokenomics-container {
+        position: relative;
+        width: auto;
+        margin: auto;
+        padding: 20px;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-style: solid;
+        border-color: wheat;
+        border-width: 5px;
+        background-color: rgb(0, 51, 51);
+        margin-top: 3%;
+    }
+
+
+    .tokenomics-container img {
+        top: 0%;
+        position: absolute;
+        width: 80px;
+        transform: rotate(-60deg);
+        margin-left: 0%;
+        display: none;
+    }
+
+    .tokenomics-container .img2 {
+        top: 0%;
+        right: 0;
+        position: absolute;
+        width: 80px;
+        transform: rotate(60deg);
+        display: none;
+    }
+
+
+    .tokenomics-container .st1 {
+        top: 0%;
+        left: 0%;
+        position: absolute;
+        width: 300px;
+        transform: rotate(15deg);
+        z-index: 0;
+        filter: opacity(0.5);
+        display: none;
+    }
+
+    .tokenomics-container .st2 {
+        top: 4%;
+        right: 0%;
+        position: absolute;
+        width: 300px;
+        transform: rotate(-12deg);
+        z-index: 0;
+        filter: opacity(0.5);
+        display: none;
+    }
+
+    .how-to {
+        background-color: rgb(0, 51, 51);
+    }
+
+    .roadmap {
+        background-color: rgb(0, 51, 51);
+    }
+
+    .tokenomics-container .roadmapimg {
+        top: 10%;
+        width: 1200px;
+    }
+
+    .tokenomics-title {
+        text-align: center;
+        color: #ffffff;
+        font-size: 50px;
+        margin-top: 0%;
+    }
+
+    .tokenomics-item {
+        align-items: center;
+        display: block;
+        margin-top: 20px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .tokenomics-subtitle {
+        color: #007BFF;
+        text-align: center;
+    }
+
+    .tokenomics-card {
+        background: #f1f1f1;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        margin-top: 10px;
+        margin: 15px;
+        width: 250px;
+        border-style: solid;
+        border-color: #000000;
+        border-width: 3px;
+        z-index: 10;
+    }
+
+    .how-to-card {
+        width: 250px;
+    }
+
+    .roadmap-card {
+        width: 250px;
+    }
+
+    .tokenomics-card:hover {
+        background-color: #e0ae22;
+    }
+
+    .tokenomics-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .tokenomics-list li {
+        padding: 8px 0;
+        font-size: 25px;
+        color: #555;
+        text-align: center;
+    }
+
+    .tokenomics-list strong {
+        color: #333;
+    }
+
+    .information {
+        border-style: solid;
+        padding: 10px;
+        border-radius: 15px;
+        border-width: 5px;
+        border-color: antiquewhite;
+        background-color: rgb(0, 51, 51);
+        margin-right: auto;
+        margin-left: auto;
+        width: autos;
+        font-family: 'MyCustomFont', sans-seri;
+        display: block;
+        margin-top: 3%;
+    }
+
+    .information .navyflag {
+        width: 100%;
+        border-radius: 3px;
+        animation: moveRight 1.8s ease forwards;
+        /* Animation name, duration, and repeat */
+
+    }
+
+    #canvas {
+        overflow-x: hidden;
+        margin: 0 auto;
+        display: block;
+        filter: url('#shadowed-goo');
+        position: absolute;
+        z-index: -10;
+        height: 425%;
+        width: 100%;
+    }
+
+    body {
+        overflow-x: hidden;
+        /* Hides horizontal overflow */
+        /* Optional: If you also want to hide vertical overflow */
+        overflow-y: auto;
+        /* Change as needed */
+    }
+
+    .logo_main {
+        display: block;
+        position: relative;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3%;
+        background-color: #ffffff;
+        width: 380px;
+        height: 380px;
+        border-radius: 500px;
+    }
+
+    .logo_main img {
+        display: block;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 600px;
+        border-style: solid;
+        border-color: rgb(0, 51, 51);
+        border-width: 10px;
+        width: 350px;
+        position: absolute;
+        top: 50%;
+        /* Position from the top */
+        left: 50%;
+        /* Position from the left */
+        transform: translate(-50%, -50%);
+        /* Center the image */
+        height: auto;
+        /* Maintain aspect ratio */
+        background-color: rgb(0, 51, 51);
+    }
+}
